@@ -96,6 +96,9 @@ local markdown_preview = {
     build = function() vim.fn["mkdp#util#install"]() end,
 };
 
+-- Add nvim-nio
+local nio = { 'nvim-neotest/nvim-nio' }
+
 -- Helper for plugin writing
 local neodev = { 'folke/neodev.nvim' };
 
@@ -131,6 +134,7 @@ local barbar = {
 return {
     --airline,
     -- tokyodark_theme,
+    nio,
     galaxyline,
     nightfox_theme,
     comment,
